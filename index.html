@@ -1,34 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripción de la página web">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <nav>
             <!-- Aquí poner un header con sombrita como el ntec y las secciones, sencillo-->
-             <ul>
-                 <li>Sobre mí</li>
-                 <li>Proyectos</li>
-                 <li>Experiencia laboral</li>
-                 <li>Educación</li>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Experiencia laboral</a></li>
+                <li><a href="#education">Educación</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h1>Don Francisco de la Roca</h1>
-            <h3>Ingeniero y arquitecto de software</h3>
-            <p>Yo soy tal y Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolore maiores ex, impedit rem possimus autem sequi veritatis hic quam enim quasi tempore voluptate ab! Harum quam eveniet quo quos.</p>
+            <div class="container">
+                <h1>Don Francisco de la Roca</h1>
+                <h2>Ingeniero y arquitecto de software</h2>
+                <p>
+                    Yo soy tal y Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas dolore maiores ex, impedit rem possimus autem sequi veritatis
+                    hic quam enim quasi tempore voluptate ab! Harum quam eveniet quo quos.
+                </p>
+            </div>
         </section>
         <section id="projects">
             <h2>Proyectos</h2>
             <article>
-                <!-- usar articles mejor para poner proyectos-->
+                <h3>Nombre del proyecto</h3>
+                <p>Descripción breve Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore suscipit iusto quod repellendus perspiciatis doloribus quaerat earum error? Soluta et aperiam eum repellat dolores praesentium dicta sunt qui tempora pariatur!</p>
+                <a href="#">Ver más</a>
             </article>
         </section>
         <section id="experience">
@@ -36,15 +52,32 @@
         </section>
         <section id="education">
             <h2>Educación</h2>
-
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Tu nombre</p>
-        <a href="#">Linkedin</a>
-        <a href="#">Github</a>
-        <!-- aquí poner redes sociales / copyright etc-->
+        <div class="footer-top">            
+            <ul class="footer-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Experiencia laboral</a></li>
+                <li><a href="#education">Educación</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2026 Tu nombre</p>
+            <div class="social">
+                <a href="#">
+                    <img src="assets/linkedin_logo.svg" alt="Linkedin">
+                </a>
+                <a href="https://github.com/iker-cpu">
+                    <img src="assets/github_logo.svg" alt="Github">
+                </a>
+            </div>
+        </div>
+    
     </footer>
 </body>
+
 </html>
