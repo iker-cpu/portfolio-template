@@ -1,10 +1,20 @@
+/* Reinicio global para empezar el proyecto y box-sizing*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #f8f2ed;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #111;
+    line-height: 1.6;
 }
+
 
 h1, h2 {
     font-family: "Domine", "Noto Serif", Times, serif;
@@ -17,6 +27,15 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+section {
+    padding: 4rem 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .nav {
