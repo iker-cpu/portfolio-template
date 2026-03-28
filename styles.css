@@ -11,6 +11,55 @@ h1, h2 {
     font-weight: 500;
 }
 
+header {
+    background-color: #f8f2ed;
+    box-shadow: 0 2px 8px #0000000d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Buscar otras maneras de hacer el underline animado tanto para el header como para el footer*/
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
 footer {
     background-color: #000000;
     color: #ffff;
@@ -25,17 +74,26 @@ footer {
 }
 
 .footer-links a {
+    position: relative;
     color: #fff;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 600;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease;
 }
-/*
-hacer que el hover de los links sea un underline pero con animacion de izquierda a derecha
-*/
+
+.footer-links a:hover::after {
+    width: 100%;
+}
 
 footer hr {
     border: none;
@@ -49,7 +107,7 @@ footer hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto; /* esto de usar pixeles y el auto no me convence nada, hay que revisarlo*/
 }
 
