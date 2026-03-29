@@ -15,11 +15,18 @@ body {
     line-height: 1.6;
 }
 
-
-h1, h2 {
+/* igual añadir h3 (?) */
+h1, h2, h3 {
     font-family: "Domine", "Noto Serif", Times, serif;
     font-weight: 500;
 }
+
+section {
+    padding: 4rem 1.5rem;
+}
+
+
+/* HEADER */
 
 header {
     background-color: #f8f2ed;
@@ -29,9 +36,6 @@ header {
     z-index: 1000;
 }
 
-section {
-    padding: 4rem 1.5rem;
-}
 
 .container {
     max-width: 900px;
@@ -77,7 +81,124 @@ section {
     transform: scaleX(1);
 }
 
+/* SECCION ABOUT */
 
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+/* poner el subtitle más cerca del titulo */
+.subtitle {
+    font-size: 1.4em;
+    color: #000000;
+}
+
+.about p {
+    max-width: 600px;
+}
+
+
+/* SECCION PROYECTOS */
+
+
+#projects h2 {
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+/*
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+*/
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    margin-bottom: 0.5rem;
+}
+
+.project-card .tech {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.project-card a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0058bd;
+}
+
+
+/* SECCIÓN EXPERIENCIA */
+
+
+#experience h2 {
+    margin-bottom: 2rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.job h3 {
+    margin-bottom: 0.3rem;
+}
+
+.company {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.job ul {
+    padding-left: 1.2rem;
+}
+
+
+/* SECCIÓN EDUCACIÓN */
+
+#education h2 {
+    margin-bottom: 2rem;
+}
+
+.education-block {
+    margin-bottom: 2rem;
+}
+
+.education-block h3 {
+    margin-bottom: 0.5rem;
+}
+
+.education-block ul {
+    padding-left: 1.2rem;
+}
+
+
+/* FOOTER */
 
 footer {
     background-color: #000000;

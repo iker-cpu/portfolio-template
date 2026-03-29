@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav class="nav">
-            <!-- Aquí poner un header con sombrita como el ntec y las secciones, sencillo-->
+
             <ul class="nav-links">
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
@@ -29,9 +29,9 @@
 
     <main>
         <section id="about">
-            <div class="container">
+            <div class="container about">
                 <h1>Don Francisco de la Roca</h1>
-                <h2>Ingeniero y arquitecto de software</h2>
+                <h2 class="subtitle">Ingeniero y arquitecto de software</h2>
                 <p>
                     Yo soy tal y Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptas dolore maiores ex, impedit rem possimus autem sequi veritatis
@@ -39,19 +39,72 @@
                 </p>
             </div>
         </section>
+        
         <section id="projects">
-            <h2>Proyectos</h2>
-            <article>
-                <h3>Nombre del proyecto</h3>
-                <p>Descripción breve Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore suscipit iusto quod repellendus perspiciatis doloribus quaerat earum error? Soluta et aperiam eum repellat dolores praesentium dicta sunt qui tempora pariatur!</p>
-                <a href="#">Ver más</a>
-            </article>
+            <div class="container">
+                <h2>Proyectos</h2>
+        
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Nombre del proyecto</h3>
+                        <p>Aplicación web para gestionar tareas de forma eficiente.</p>
+                        <p class="tech">HTML - CSS - JavaScript</p>
+                        <a href="#">Ver más</a>
+                    </article>
+        
+                    <article class="project-card">
+                        <h3>Otro proyecto</h3>
+                        <p>Landing page moderna con diseño responsive.</p>
+                        <p class="tech">HTML - CSS</p>
+                        <a href="#">Ver más</a>
+                    </article>
+                </div>
+            </div>
         </section>
+        
         <section id="experience">
-            <h2>Experiencia</h2>
+            <div class="container">
+                <h2>Experiencia</h2>
+        
+                <div class="job">
+                    <h3>Frontend Developer</h3>
+                    <p class="company">Empresa X · 2022 - 2024</p>
+                    <ul>
+                        <li>Desarrollo de interfaces web modernas</li>
+                        <li>Optimización de rendimiento</li>
+                        <li>Colaboración con equipos de diseño</li>
+                    </ul>
+                </div>
+        
+                <div class="job">
+                    <h3>Intern Developer</h3>
+                    <p class="company">Empresa Y · 2021</p>
+                    <ul>
+                        <li>Soporte en desarrollo frontend</li>
+                        <li>Corrección de bugs</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+        
         <section id="education">
-            <h2>Educación</h2>
+            <div class="container">
+                <h2>Educación</h2>
+                
+                <div class="education-block">
+                    <h3>Estudios</h3>
+                    <p>Ingeniería informática - Universidad X (2010-2014)</p>
+                </div>
+
+                <div class="education-block">
+                    <h3>Cursos y certificaciones</h3>
+                    <ul>
+                        <li>Curso de desarrollo web - FreeCodeCamp (2024)</li>
+                        <li>CCNA - Cisco (2012)</li>
+                    </ul>
+                </div>
+            </div>
+            
         </section>
     </main>
 
