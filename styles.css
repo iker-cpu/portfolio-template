@@ -25,6 +25,12 @@ section {
     padding: 4rem 1.5rem;
 }
 
+.section-divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0.5rem 0 2rem;
+}
 
 /* HEADER */
 
@@ -86,21 +92,45 @@ header {
 .about {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .about h1 {
     font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
 }
 /* poner el subtitle más cerca del titulo */
 .subtitle {
     font-size: 1.4em;
-    color: #000000;
+    color: #fc3b00;
+    margin-top: 0;
+    position: relative;
+    width: fit-content;
+    padding-top: 0.6rem;
 }
 
-.about p {
-    max-width: 600px;
+.subtitle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
 }
+
+
+
+.about-intro {
+    margin-top: 2.2rem;    
+    border-left: 4px solid #4b4b4b;
+    padding-left: 1rem;
+}
+
+.about-description {
+    color: #616161;
+}
+
 
 
 /* SECCION PROYECTOS */
