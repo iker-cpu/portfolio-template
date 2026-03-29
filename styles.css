@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #f8f2ed;
@@ -142,22 +145,19 @@ header {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
 .project-card {
     background: #fff;
     padding: 1.5rem;
-    border-radius: 16px;
+    border-radius: 12px;
     transition: transform 0.2s ease;
-/*
-    aspect-ratio: 1 / 1;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-*/
+    height: 100%;
 }
 
 .project-card:hover {
@@ -173,14 +173,20 @@ header {
 }
 
 .project-card .tech {
-    font-size: 0.9rem;
-    color: #777;
+    font-size: 0.8rem;
+    color: #555;
+    background: #f1f1f1;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    width: fit-content;
 }
 
 .project-card a {
     text-decoration: none;
     font-weight: 600;
     color: #0058bd;
+    margin-top: 1rem;
 }
 
 
@@ -193,6 +199,7 @@ header {
 
 .job {
     margin-bottom: 2rem;
+    
 }
 
 .job h3 {
